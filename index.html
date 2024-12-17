@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Ariel Paga Jr. Portfolio </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+ margin: 0;
+}
+* {
+ box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ background-color: #333;
+overflow: hidden; 
+ 
+} 
+li:not(.right) {
+float: left;
+
+}
+
+
+
+li a, .dropbtn {
+  display: inline-block;
+ color: white;
+text-decoration: none;
+padding: 8px 16px;
+text-align: center;
+
+
+}
+li.dropdown {
+display: inline-block;
+
+}
+
+
+
+
+li a:hover:not(active), .dropdown:hover .dropbtn {
+background-color: #111;
+transition: background 0.5s ease;
+ 
+}
+.active {
+ background: #11998e;
+background: webkit-linear-gradient(to right, #38ef7d, #11998e);
+background: linear-gradient(to right, #38ef7d, #11998e);
+
+}
+
+li.right {
+ float: right;
+}
+
+nav {
+position: fixed;
+top: 0;
+width: 100%;
+height: 100%;
+
+}
+
+
+.dropdown-content{
+
+display: none;
+position: absolute; 
+background-color: #f9f9f9;
+
+min-width: 120px;
+box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.2);
+z-index: 1;
+right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+
+background-color: #f1f1f1;
+color: black;
+}
+
+.container {
+
+background-color: #e7e7e7; 
+color: #666;
+padding: 20px;
+
+margin-top: 30px;
+}
+
+
+
+@media screen and (max-width: 400px){
+li> a  ,.dropbtn{
+padding: 10px 10px;
+font-size: 14px;
+
+}
+}
+
+.portfolio> a> img {
+
+ border-radius: 50%;
+ display: block;
+width: 100%;
+margin: 0 auto;
+
+
+}
+
+.portfolio {
+
+ margin: 0 auto;
+width: 60%;
+text-align: center;
+
+
+}
+
+.project-con {
+
+border: 1px solid #ccc;
+float: left;
+width: 24.99999%;
+padding: 0 6px;
+}
+
+
+.project-con:hover {
+
+border: 1px solid #777;
+}
+
+
+.project-con img {
+
+width: 100%;
+height: auto;
+}
+
+.about-pro {
+padding: 15px;
+text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+ .project-con {
+width: 49.99999%;
+margin: 6px 0;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.project-con {
+width: 100%;
+}
+}
+
+.project {
+overflow: auto;
+margin-top: 30px;
+padding-top: 20px;
+
+
+}
+
+/* Contact Form */
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+reaize: vertical;
+
+}
+
+input[type=submit] {
+background-color: #04AA6D;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+
+}
+
+
+input[type=submit]:hover {
+ background-color: #45a049;
+}
+
+
+.contact {
+border-radius: 5px;
+padding: 20px;
+margin-top: 30px;
+
+}
+
+#contact, #container, #project {
+ transition-duration:  2s;
+
+
+}
+
+
+h2, h3, footer> p {
+
+text-align: center;
+}
+p {
+text-indent: 20px;
+}
+footer {
+padding: 20px;
+}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+  <li><a class="active" href="#profile">Profile</a></li>
+  <li><a href="#portfolio">About</a></li>
+  <li><a href="#project">Project</a></li>
+  <li><a href="#contact">Contact</a></li>
+ <li class="dropdown right"><a class="dropbtn" href="javascript:void(0)">Dropdown</a>
+<div class="dropdown-content">
+<a href="#"> Link1 </a>
+<a href="#"> Link2 </a>
+<a href="#"> Link3 </a>
+</div>
+</li>
+
+</ul>
+</nav>
+<div id="portfolio" class="container">
+
+<div class="portfolio">
+<a target="_blank" href="images/profile/profilepic.jpeg">
+<img src="images/profile/profilepic.jpeg" alt="hkg" style="width: 200px; height: 200px;"></a>
+<div class="desc">I am Ariel D. Paga Jr. a Sofware developer </div>
+</div>
+<div>
+
+<h2>About</h2>
+<div>
+<h3> Bio </h3>
+
+<p> I am motivated to work to contribute innovative solution in the field of some technology. I love to study more and prepared to apply my knowledge and work according to my strength. </p>
+
+</div>
+<hr>
+<div>
+<h3>Experience</h3>
+<p>
+Recent graduates with handa on experience in web development through internship 
+</p>
+</div>
+<hr>
+<div>
+<h3>Formal Education</h3>
+<p>
+Bachelor of Science in Information Technology (Batch 2023-2024)
+</p>
+</div>
+<hr>
+<div>
+<h3>Skill-based education</h3>
+<p> Self tough expertise in Html/CSS, JavaScript and MYSQL
+</p>
+</div>
+<hr>
+<div>
+<h3>Technical Skill</h3>
+<p> Programming Language: JavaScript, Python and Java
+</p>
+<p> Web Development: Html5,CSS3
+</p>
+<p> Databasee: Mysql
+</p>
+<p> Operating System: Window,Linux
+</p>
+</div>
+<hr>
+<div>
+<h3>Soft Skill</h3>
+<p> Communication: Verbal, written and presentation 
+</p>
+<p> Teamwork: collaboration, teamwork 
+</p>
+<p> Time Management: Spiral 
+</p>
+</div>
+<hr>
+<div>
+<h3>Language Skill</h3>
+<p> English, Tagalog and Bicol </p>
+</div>
+<hr>
+<div>
+<h3>Tools and Software</h3>
+<p> Visual Studio and github</p>
+</div>
+<div id="project" class="project">
+
+<h2>Project</h2>
+<div class="project-con">
+<a target="_blank" href="images/project/guiprototype.jpg">
+<img src="images/project/guiprototype.jpg " alt="Project alt" width="600" height="400"/>
+</a>
+<div class="about-pro">
+When we create our thesis we created a prototype for our project using canva
+</div>
+</div>
+
+<div class="project-con">
+<a target="_blank" href="images/project/guicontribute.jpg">
+<img src="images/project/guicontribute.jpg" alt="Project alt" width="600" height="400"/>
+</a>
+<div class="about-pro">
+I contribute for this project when our captone modify to present in panel
+</div>
+</div>
+
+<div class="project-con">
+<a target="_blank" href="images/project/guilogin.jpg">
+<img  src="images/project/guilogin.jpg" alt="Project alt" width="600" height="400"/>
+</a>
+<div class="about-pro">
+We suggest to design our background here and also add some feature in user account
+</div>
+</div>
+
+<div class="project-con">
+<a target="_blank" href="images/project/guimanual.jpg">
+<img src="images/project/guimanual.jpg" alt="Project alt" width="600" height="400"/>
+</a>
+<div class="about-pro">
+We created this user manual for user after we finished our thesis.
+</div>
+</div>
+
+
+<div class="project-con">
+<a target="_blank" href="images/project/typo.jpg">
+<img src="images/project/typo.jpg" alt="Project alt" width="600" height="400"/>
+</a>
+<div class="about-pro">
+my typography name project i created during i was third year in college. visit <a target="_blank" href="https://www.behance.net/3d316e12?fbclid=IwZXh0bgNhZW0CMTEAAR144gR6MUVOSvYhn9g8NT8_p6I5u98pxJf3B3movQPzbNBBdRaLtcpUjlY_aem_WXCbbFx2NERCvNiPZ8Sh1w"> Behance </a>
+</div>
+</div>
+
+</div>
+
+
+<div id="contact" class="contact">
+<h2>Contact Form </h2>
+
+<div class="contact-con">
+<form action"#">
+<label for="fname">First Name </label>
+<input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+
+<label for="lname">Last Name </label>
+<input type="text" id="lname" name="lastname" placeholder="Your name...">
+
+<label for="country"> Country </label>
+<select name="country" id="country">
+<option value="australia">Australia</option>
+<option value="usa">USA</option>
+<option value="philippines">Philippines</option>
+</select>
+
+<label for="subject">Subject</label>
+<textarea name="subject" id="subject" placeholder="write something..." cols="30" rows="10" style="height: 200px;"></textarea>
+
+<input type="submit" value="Submit">
+</form>
+
+
+<footer>
+            <p>&copy; 2024 by Ariel Paga Jr.</p>
+        </footer>
+
+</div>
+
+
+
+
+</body>
+
+
+  </html>
